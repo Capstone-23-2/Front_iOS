@@ -16,14 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        // Create the SwiftUI view that provides the window contents.
-      //let contentView = ContentView()
-        let mainViewController = MainViewController()
-    
-
-        // Use a UIHostingController as window root view controller.
+        //let contentView = ContentView()
+        let mainTabBarController = MainTabBarController()
         let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = mainViewController
+        window.rootViewController = mainTabBarController
         self.window = window
         window.makeKeyAndVisible()
         return true

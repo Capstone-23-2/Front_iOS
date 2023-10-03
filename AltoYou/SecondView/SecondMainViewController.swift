@@ -1,20 +1,20 @@
 //
-//  MainViewController.swift
+//  SecondMainViewController.swift
 //  AltoYou
 //
-//  Created by 정의찬 on 10/3/23.
+//  Created by 정의찬 on 10/4/23.
 //
 
 import UIKit
 
-class MainViewController: UIViewController {
+class SecondMainViewController: UIViewController {
 
-    // MARK: - init
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.view.backgroundColor = .blue
+        self.view.backgroundColor = .white
+        // Do any additional setup after loading the view.
     }
+    
 
     /*
     // MARK: - Navigation
