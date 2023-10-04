@@ -12,18 +12,38 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
-        setSelf()
+        
+        let space = tabBar.bounds.width * 0.30
+        setSelf(space, 30)
         addTab()
     }
     
     //MARK: - Function
     
-    private func setSelf(){
-        self.tabBar.tintColor = .blue
+    private func setSelf(_ space: CGFloat, _ addHeight: CGFloat){
+        let layer = CAShapeLayer()
+
+        let x: CGFloat = space
+        let width: CGFloat = tabBar.bounds.width - (x * 2)
+        let baseHeight: CGFloat = 49
+        let currentHeight: CGFloat = baseHeight + addHeight
+        let y: CGFloat = -(addHeight/2 + 0)
+        
+        let path = UIBezierPath(roundedRect: CGRect(x: x, y: y, width: width, height: currentHeight), cornerRadius: currentHeight / 2).cgPath
+        layer.path = path
+        layer.fillColor = UIColor(red: 0.89, green: 0.91, blue: 0.96, alpha: 1.00).cgColor
+        
+        layer.shadowColor = UIColor.gray.cgColor
+        layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        layer.shadowRadius = 5.0
+        layer.shadowOpacity = 0.5
+        
+        self.tabBar.layer.insertSublayer(layer, at: 0)
+        self.tabBar.itemPositioning = .centered
     }
     
     private func addTab(){
-        let targetSize = CGSize(width: 60, height: 60)
+        let targetSize = CGSize(width: 40, height: 40)
         let selectedColor = UIColor(red: 0.53, green: 0.81, blue: 0.92, alpha: 1.00)
         
         let vc1 = MainViewController()
@@ -31,25 +51,21 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
         
         if let resizedHouseImage = UIImage(named: "house.png")?.resizeImage(targetSize: targetSize) {
             vc1.tabBarItem.image = resizedHouseImage.withRenderingMode(.alwaysOriginal)
-            vc1.tabBarItem.title = "Home"
-            vc1.tabBarItem.setTitleTextAttributes([.font: UIFont.boldSystemFont(ofSize: 20)], for: .normal)
         }
         
         if let resizedChatImage = UIImage(named: "chat.png")?.resizeImage(targetSize: targetSize) {
             vc2.tabBarItem.image = resizedChatImage.withRenderingMode(.alwaysOriginal)
-            vc2.tabBarItem.title = "Conversation"
-            vc2.tabBarItem.setTitleTextAttributes([.font: UIFont.boldSystemFont(ofSize: 20)], for: .normal)
         }
         
-        let nav1 = UINavigationController(rootViewController: vc1)
-        let nav2 = UINavigationController(rootViewController: vc2)
-        
-        nav1.navigationBar.prefersLargeTitles = true
-        nav2.navigationBar.prefersLargeTitles = true
+        let leftEmptyVc = UIViewController()
+        let rightEmptyVc = UIViewController()
+        [leftEmptyVc, rightEmptyVc].forEach{ $0.tabBarItem.isEnabled = false }
         
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: selectedColor], for: .selected)
         
-        setViewControllers([nav1, nav2], animated: true)
+        
+        viewControllers = [leftEmptyVc, vc1, vc2, rightEmptyVc]
+        self.selectedIndex = 1
     }
     
     ///MARK: 애니메이션 기능
