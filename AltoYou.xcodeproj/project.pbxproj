@@ -59,13 +59,11 @@
 		485A99822ACBFC0500C94740 /* AltoYou */ = {
 			isa = PBXGroup;
 			children = (
-				486D45922ACC698A00D96EB1 /* Image */,
+				4865AE6E2ACD74C90085A4C7 /* MainTabBar */,
 				486D458F2ACC65C800D96EB1 /* SecondView */,
 				486D458E2ACC65BA00D96EB1 /* FirstView */,
 				485A99832ACBFC0500C94740 /* AppDelegate.swift */,
 				485A99852ACBFC0500C94740 /* ContentView.swift */,
-				486D45992ACC6CEA00D96EB1 /* MainTabBarController.swift */,
-				486D459B2ACC71E400D96EB1 /* Extension.swift */,
 				485A99872ACBFC0600C94740 /* Assets.xcassets */,
 				485A99892ACBFC0600C94740 /* Preview Content */,
 			);
@@ -78,6 +76,15 @@
 				485A998A2ACBFC0600C94740 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4865AE6E2ACD74C90085A4C7 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				486D45992ACC6CEA00D96EB1 /* MainTabBarController.swift */,
+				486D459B2ACC71E400D96EB1 /* Extension.swift */,
+			);
+			path = MainTabBar;
 			sourceTree = "<group>";
 		};
 		486D458E2ACC65BA00D96EB1 /* FirstView */ = {
@@ -94,13 +101,6 @@
 				486D45902ACC660300D96EB1 /* SecondMainViewController.swift */,
 			);
 			path = SecondView;
-			sourceTree = "<group>";
-		};
-		486D45922ACC698A00D96EB1 /* Image */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,8 +319,8 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -349,8 +349,8 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
