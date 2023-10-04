@@ -12,17 +12,15 @@ class MainViewController: UIViewController {
     // MARK: - init
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .blue
+        setSelf()
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    // MARK: - Function
+    private func setSelf(){
+        self.view.backgroundColor = UIColor(red: 0.49, green: 0.64, blue: 1.00, alpha: 1.00)
     }
-    */
+    
+    
+    // MARK: - Constraints
 
 }
