@@ -15,6 +15,11 @@
 		486D45912ACC660300D96EB1 /* SecondMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486D45902ACC660300D96EB1 /* SecondMainViewController.swift */; };
 		486D459A2ACC6CEA00D96EB1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486D45992ACC6CEA00D96EB1 /* MainTabBarController.swift */; };
 		486D459C2ACC71E400D96EB1 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486D459B2ACC71E400D96EB1 /* Extension.swift */; };
+		487007D22ACF5088009C6EC9 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487007D12ACF5088009C6EC9 /* TopView.swift */; };
+		487007D82ACF59E9009C6EC9 /* goryeong.otf in Resources */ = {isa = PBXBuildFile; fileRef = 487007D72ACF59E9009C6EC9 /* goryeong.otf */; };
+		48BF0B3D2ACF5FDF00565FA5 /* toy_drummer_idle.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 48BF0B3C2ACF5FDF00565FA5 /* toy_drummer_idle.usdz */; };
+		48BF0B422ACF684800565FA5 /* DayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BF0B412ACF684800565FA5 /* DayCollectionViewCell.swift */; };
+		48BF0B442ACF6BD100565FA5 /* DayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BF0B432ACF6BD100565FA5 /* DayModel.swift */; };
 		48FD62A32ACD90F40010FBD9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 48FD62A22ACD90F40010FBD9 /* SnapKit */; };
 		48FD62A52ACD90F40010FBD9 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 48FD62A42ACD90F40010FBD9 /* SnapKit-Dynamic */; };
 /* End PBXBuildFile section */
@@ -29,6 +34,13 @@
 		486D45902ACC660300D96EB1 /* SecondMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondMainViewController.swift; sourceTree = "<group>"; };
 		486D45992ACC6CEA00D96EB1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		486D459B2ACC71E400D96EB1 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		487007D12ACF5088009C6EC9 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		487007D32ACF56B5009C6EC9 /* Katuri.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Katuri.otf; sourceTree = "<group>"; };
+		487007D42ACF5735009C6EC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		487007D72ACF59E9009C6EC9 /* goryeong.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = goryeong.otf; sourceTree = "<group>"; };
+		48BF0B3C2ACF5FDF00565FA5 /* toy_drummer_idle.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_drummer_idle.usdz; sourceTree = "<group>"; };
+		48BF0B412ACF684800565FA5 /* DayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCollectionViewCell.swift; sourceTree = "<group>"; };
+		48BF0B432ACF6BD100565FA5 /* DayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +75,12 @@
 		485A99822ACBFC0500C94740 /* AltoYou */ = {
 			isa = PBXGroup;
 			children = (
+				487007D42ACF5735009C6EC9 /* Info.plist */,
+				48BF0B3E2ACF5FE800565FA5 /* Font */,
+				48BF0B3F2ACF601000565FA5 /* 3D Characters */,
 				4865AE6E2ACD74C90085A4C7 /* MainTabBar */,
-				486D458F2ACC65C800D96EB1 /* SecondView */,
-				486D458E2ACC65BA00D96EB1 /* FirstView */,
+				486D458F2ACC65C800D96EB1 /* SecondTabView */,
+				486D458E2ACC65BA00D96EB1 /* FirstTabView */,
 				485A99832ACBFC0500C94740 /* AppDelegate.swift */,
 				485A99852ACBFC0500C94740 /* ContentView.swift */,
 				485A99872ACBFC0600C94740 /* Assets.xcassets */,
@@ -91,20 +106,40 @@
 			path = MainTabBar;
 			sourceTree = "<group>";
 		};
-		486D458E2ACC65BA00D96EB1 /* FirstView */ = {
+		486D458E2ACC65BA00D96EB1 /* FirstTabView */ = {
 			isa = PBXGroup;
 			children = (
 				485A99912ACBFC5700C94740 /* MainViewController.swift */,
+				487007D12ACF5088009C6EC9 /* TopView.swift */,
+				48BF0B412ACF684800565FA5 /* DayCollectionViewCell.swift */,
+				48BF0B432ACF6BD100565FA5 /* DayModel.swift */,
 			);
-			path = FirstView;
+			path = FirstTabView;
 			sourceTree = "<group>";
 		};
-		486D458F2ACC65C800D96EB1 /* SecondView */ = {
+		486D458F2ACC65C800D96EB1 /* SecondTabView */ = {
 			isa = PBXGroup;
 			children = (
 				486D45902ACC660300D96EB1 /* SecondMainViewController.swift */,
 			);
-			path = SecondView;
+			path = SecondTabView;
+			sourceTree = "<group>";
+		};
+		48BF0B3E2ACF5FE800565FA5 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				487007D32ACF56B5009C6EC9 /* Katuri.otf */,
+				487007D72ACF59E9009C6EC9 /* goryeong.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		48BF0B3F2ACF601000565FA5 /* 3D Characters */ = {
+			isa = PBXGroup;
+			children = (
+				48BF0B3C2ACF5FDF00565FA5 /* toy_drummer_idle.usdz */,
+			);
+			path = "3D Characters";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +208,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				485A998B2ACBFC0600C94740 /* Preview Assets.xcassets in Resources */,
+				48BF0B3D2ACF5FDF00565FA5 /* toy_drummer_idle.usdz in Resources */,
+				487007D82ACF59E9009C6EC9 /* goryeong.otf in Resources */,
 				485A99882ACBFC0600C94740 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,8 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				487007D22ACF5088009C6EC9 /* TopView.swift in Sources */,
 				485A99922ACBFC5700C94740 /* MainViewController.swift in Sources */,
 				486D45912ACC660300D96EB1 /* SecondMainViewController.swift in Sources */,
+				48BF0B442ACF6BD100565FA5 /* DayModel.swift in Sources */,
+				48BF0B422ACF684800565FA5 /* DayCollectionViewCell.swift in Sources */,
 				486D459A2ACC6CEA00D96EB1 /* MainTabBarController.swift in Sources */,
 				486D459C2ACC71E400D96EB1 /* Extension.swift in Sources */,
 				485A99862ACBFC0500C94740 /* ContentView.swift in Sources */,
@@ -325,6 +365,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AltoYou/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AltoYou/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -355,6 +396,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AltoYou/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AltoYou/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
