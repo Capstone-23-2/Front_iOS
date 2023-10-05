@@ -15,6 +15,8 @@
 		486D45912ACC660300D96EB1 /* SecondMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486D45902ACC660300D96EB1 /* SecondMainViewController.swift */; };
 		486D459A2ACC6CEA00D96EB1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486D45992ACC6CEA00D96EB1 /* MainTabBarController.swift */; };
 		486D459C2ACC71E400D96EB1 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486D459B2ACC71E400D96EB1 /* Extension.swift */; };
+		487007D22ACF5088009C6EC9 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487007D12ACF5088009C6EC9 /* TopView.swift */; };
+		487007D82ACF59E9009C6EC9 /* goryeong.otf in Resources */ = {isa = PBXBuildFile; fileRef = 487007D72ACF59E9009C6EC9 /* goryeong.otf */; };
 		48FD62A32ACD90F40010FBD9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 48FD62A22ACD90F40010FBD9 /* SnapKit */; };
 		48FD62A52ACD90F40010FBD9 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 48FD62A42ACD90F40010FBD9 /* SnapKit-Dynamic */; };
 /* End PBXBuildFile section */
@@ -29,6 +31,10 @@
 		486D45902ACC660300D96EB1 /* SecondMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondMainViewController.swift; sourceTree = "<group>"; };
 		486D45992ACC6CEA00D96EB1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		486D459B2ACC71E400D96EB1 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		487007D12ACF5088009C6EC9 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		487007D32ACF56B5009C6EC9 /* Katuri.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Katuri.otf; sourceTree = "<group>"; };
+		487007D42ACF5735009C6EC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		487007D72ACF59E9009C6EC9 /* goryeong.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = goryeong.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,8 @@
 		485A99772ACBFC0500C94740 = {
 			isa = PBXGroup;
 			children = (
+				487007D32ACF56B5009C6EC9 /* Katuri.otf */,
+				487007D72ACF59E9009C6EC9 /* goryeong.otf */,
 				485A99822ACBFC0500C94740 /* AltoYou */,
 				485A99812ACBFC0500C94740 /* Products */,
 			);
@@ -63,6 +71,7 @@
 		485A99822ACBFC0500C94740 /* AltoYou */ = {
 			isa = PBXGroup;
 			children = (
+				487007D42ACF5735009C6EC9 /* Info.plist */,
 				4865AE6E2ACD74C90085A4C7 /* MainTabBar */,
 				486D458F2ACC65C800D96EB1 /* SecondView */,
 				486D458E2ACC65BA00D96EB1 /* FirstView */,
@@ -95,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				485A99912ACBFC5700C94740 /* MainViewController.swift */,
+				487007D12ACF5088009C6EC9 /* TopView.swift */,
 			);
 			path = FirstView;
 			sourceTree = "<group>";
@@ -173,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				485A998B2ACBFC0600C94740 /* Preview Assets.xcassets in Resources */,
+				487007D82ACF59E9009C6EC9 /* goryeong.otf in Resources */,
 				485A99882ACBFC0600C94740 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				487007D22ACF5088009C6EC9 /* TopView.swift in Sources */,
 				485A99922ACBFC5700C94740 /* MainViewController.swift in Sources */,
 				486D45912ACC660300D96EB1 /* SecondMainViewController.swift in Sources */,
 				486D459A2ACC6CEA00D96EB1 /* MainTabBarController.swift in Sources */,
@@ -325,6 +337,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AltoYou/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AltoYou/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -355,6 +368,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AltoYou/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AltoYou/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
