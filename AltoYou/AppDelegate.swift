@@ -36,7 +36,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let mainTabBarController = MainTabBarController()
                 self.window?.rootViewController = mainTabBarController
             })
-            //let contentView = ContentView()
         }
         return true
     }

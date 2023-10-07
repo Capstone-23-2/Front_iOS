@@ -31,7 +31,8 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
         
         let path = UIBezierPath(roundedRect: CGRect(x: x, y: y, width: width, height: currentHeight), cornerRadius: currentHeight / 2).cgPath
         layer.path = path
-        layer.fillColor = UIColor(red: 0.89, green: 0.91, blue: 0.96, alpha: 1.00).cgColor
+        layer.fillColor = UIColor(red: 0.50, green: 0.91, blue: 1.00, alpha: 1.00).cgColor
+        //UIColor(red: 0.89, green: 0.91, blue: 0.96, alpha: 1.00).cgColor
         
         layer.shadowColor = UIColor.gray.cgColor
         layer.shadowOffset = CGSize(width: 0.0, height: 2.0)

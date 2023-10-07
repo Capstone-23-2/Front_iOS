@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48433B912ACFCDB7007F017D /* Katuri.otf in Resources */ = {isa = PBXBuildFile; fileRef = 48433B902ACFCDB7007F017D /* Katuri.otf */; };
 		485A99842ACBFC0500C94740 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485A99832ACBFC0500C94740 /* AppDelegate.swift */; };
 		485A99862ACBFC0500C94740 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485A99852ACBFC0500C94740 /* ContentView.swift */; };
 		485A99882ACBFC0600C94740 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 485A99872ACBFC0600C94740 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48433B902ACFCDB7007F017D /* Katuri.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Katuri.otf; sourceTree = "<group>"; };
 		485A99802ACBFC0500C94740 /* AltoYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AltoYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		485A99832ACBFC0500C94740 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		485A99852ACBFC0500C94740 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,7 +37,6 @@
 		486D45992ACC6CEA00D96EB1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		486D459B2ACC71E400D96EB1 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		487007D12ACF5088009C6EC9 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
-		487007D32ACF56B5009C6EC9 /* Katuri.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Katuri.otf; sourceTree = "<group>"; };
 		487007D42ACF5735009C6EC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		487007D72ACF59E9009C6EC9 /* goryeong.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = goryeong.otf; sourceTree = "<group>"; };
 		48BF0B3C2ACF5FDF00565FA5 /* toy_drummer_idle.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_drummer_idle.usdz; sourceTree = "<group>"; };
@@ -128,7 +129,7 @@
 		48BF0B3E2ACF5FE800565FA5 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				487007D32ACF56B5009C6EC9 /* Katuri.otf */,
+				48433B902ACFCDB7007F017D /* Katuri.otf */,
 				487007D72ACF59E9009C6EC9 /* goryeong.otf */,
 			);
 			path = Font;
@@ -211,6 +212,7 @@
 				48BF0B3D2ACF5FDF00565FA5 /* toy_drummer_idle.usdz in Resources */,
 				487007D82ACF59E9009C6EC9 /* goryeong.otf in Resources */,
 				485A99882ACBFC0600C94740 /* Assets.xcassets in Resources */,
+				48433B912ACFCDB7007F017D /* Katuri.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

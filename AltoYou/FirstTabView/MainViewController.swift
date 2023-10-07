@@ -6,21 +6,33 @@
 //
 
 import UIKit
+import SnapKit
 
 class MainViewController: UIViewController {
+    
+    private lazy var topView: TopView = {
+        let view = TopView()
+        return view
+    }()
     
     // MARK: - init
     override func viewDidLoad() {
         super.viewDidLoad()
-        setSelf()
+        self.view.backgroundColor = UIColor.white
+        makeConstraints()
     }
     
     // MARK: - Function
-    private func setSelf(){
-        self.view.backgroundColor = UIColor(red: 0.49, green: 0.64, blue: 1.00, alpha: 1.00)
+    private func makeConstraints(){
+        self.view.addSubview(topView)
+        
+        topView.snp.makeConstraints{ (make) -> Void in
+            make.top.left.right.equalToSuperview()
+            make.height.equalTo(390)
+        
+        }
     }
     
     
-    // MARK: - Constraints
 
 }
